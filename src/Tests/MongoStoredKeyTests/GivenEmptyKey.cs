@@ -12,7 +12,7 @@ namespace Tests.MongoStoredKeyTests
         [Fact]
         public void ValidateThrows()
         {
-            Assert.Throws<InvalidOperationException>(() => Key.Validate());
+            Assert.Throws<ArgumentNullException>(() => Key.Validate());
         }
     }
 }
